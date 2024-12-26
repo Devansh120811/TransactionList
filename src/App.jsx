@@ -34,6 +34,7 @@ const App = () => {
         ? acc + transaction.amount
         : acc - transaction.amount;
     }, 0);
+    // editBalance(balance);
     setBalance(totalBalance);
   };
 
@@ -91,7 +92,7 @@ const App = () => {
        setError('Insufficient balance to update this expense!');
       return;
     }
-
+    // setBalance(editBalance)
     const updatedData = {
       amount: parsedAmount,
       description,
